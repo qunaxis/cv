@@ -1,0 +1,101 @@
+// USER VARIABLES SECTION
+
+$primary: #308641;
+$primary-dark: #00613B;
+$secondary: #F4AF00;
+$gradient: linear-gradient(115deg, #308641 0%, #29CC4E 100%);
+$black: #000000;
+// $gray-dark: #666666;
+// $gray-light: #bbbbbb;
+$gray-dark: rgba($black, .5);
+$gray-light: rgba($black, .25);
+$gray-megalight: rgba($black, .025);
+
+// $accent: orange; // Accent Color
+$fontsize: 18px; // Body Font Size
+$textcolor: $black; // Text Color
+$lineheight: 1.2; // Document Line Height
+$userfont: Steppe, Manrope, sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 32px;
+$gutter: $grid-gutter-width;
+$grid-margin: 64px;
+
+// IMPORT SECTION
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// @import 'node_modules/owl.carousel/src/scss/owl.carousel.scss';
+// @import 'node_modules/owl.carousel/src/scss/owl.theme.default.scss';
+// @import 'node_modules/owl.carousel/src/scss/owl.theme.green.scss';
+// @import 'node_modules/animate.css/animate';
+// @import '../css/protip.min.css';
+
+// SET GRID MARGIN
+
+.container-fluid {
+	padding: 0 $grid-margin;
+}
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: local($fname), url($furl) format('woff2');
+		// font-display: swap; // Uncomment to initially display system fonts
+	}
+}
+
+@include font('Manrope', normal, 200, '../fonts/Manrope ExtraLight.woff2');
+@include font('Manrope', normal, 300, '../fonts/Manrope Light.woff2');
+@include font('Manrope', normal, 400, '../fonts/Manrope Regular.woff2');
+@include font('Manrope', normal, 500, '../fonts/Manrope Medium.woff2');
+@include font('Manrope', normal, 600, '../fonts/Manrope SemiBold.woff2');
+@include font('Manrope', normal, 700, '../fonts/Manrope Bold.woff2');
+@include font('Manrope', normal, 800, '../fonts/Manrope ExtraBold.woff2');
+
+@include font('Steppe', normal, 100, '../fonts/Steppe/Steppe-Thin.woff2');
+@include font('Steppe', normal, 200, '../fonts/Steppe/Steppe-Light.woff2');
+@include font('Steppe', normal, 300, '../fonts/Steppe/Steppe-Book.woff2');
+@include font('Steppe', normal, 400, '../fonts/Steppe/Steppe-Regular.woff2');
+@include font('Steppe', normal, 500, '../fonts/Steppe/Steppe-Medium.woff2');
+@include font('Steppe', normal, 600, '../fonts/Steppe/Steppe-SemiBold.woff2');
+@include font('Steppe', normal, 700, '../fonts/Steppe/Steppe-Bold.woff2');
+@include font('Steppe', normal, 800, '../fonts/Steppe/Steppe-ExtraBold.woff2');
+@include font('Steppe', normal, 900, '../fonts/Steppe/Steppe-Black.woff2');
+
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $primary;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+html, body {
+	font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+	min-width: 100vw;
+	position: relative;
+	overflow-x: hidden;
+}
