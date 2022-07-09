@@ -13,8 +13,8 @@ let paths = {
 			'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
 			// 'node_modules/smooth-scrollbar/dist/smooth-scrollbar.js', // npm vendor example (npm i --save-dev jquery)
 			'node_modules/typed.js/lib/typed.min.js',
-			'node_modules/imask/dist/imask.js', // npm vendor example (npm i --save-dev jquery)
-			'node_modules/gsap/dist/gsap.min.js', // npm vendor example (npm i --save-dev jquery)
+			// 'node_modules/imask/dist/imask.js', // npm vendor example (npm i --save-dev jquery)
+			// 'node_modules/gsap/dist/gsap.min.js', // npm vendor example (npm i --save-dev jquery)
 			// 'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js', // npm vendor example (npm i --save-dev jquery)
 			// 'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js', // npm vendor example (npm i --save-dev jquery)
 			// 'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.velocity.min.js', // npm vendor example (npm i --save-dev jquery)
