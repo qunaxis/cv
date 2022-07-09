@@ -6,7 +6,7 @@ window.onload = function() {
 			'Typescript',
 			'Golang',
 			'Python',
-			'Storages and message brokers',
+			'Storages and msg brokers',
 			'Amazon Web Services',
 			'Docker',
 			'Kubernetes',
