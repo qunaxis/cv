@@ -1,6 +1,6 @@
 window.onload = function() {
 	// Custom JS
-	const typed = new Typed('.cta__description', {
+	const typed = new Typed('#typed', {
 		stringsElement: '#typed-strings',
 		smartTyping: true,
 		typeSpeed: 50,
