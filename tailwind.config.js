@@ -1,11 +1,10 @@
-module.exports = {
-  purge: [
+import daisyui from 'daisyui';
+
+const config = {
+  content: [
     './app/**/*.html',
     './app/**/*.js',
   ],
-  // content: [
-  //   './app/**/*.html',
-  // ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -14,6 +13,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('daisyui'),
+    daisyui,
   ],
 }
+
+export default config;
